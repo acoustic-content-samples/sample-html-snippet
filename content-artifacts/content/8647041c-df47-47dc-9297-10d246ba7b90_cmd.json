@@ -1,0 +1,51 @@
+{
+  "id": "8647041c-df47-47dc-9297-10d246ba7b90",
+  "rev": "27-9ba54b5f926b643a074b3b99a4b78197",
+  "name": "Stock ticker HTML snippet",
+  "description": "",
+  "classification": "content",
+  "typeId": "fdee49eb-1367-4005-8bfe-7e634a4d7e0f",
+  "lastModified": "2018-01-23T20:52:29.650Z",
+  "lastModifierId": "a8ff5cb5-32db-47dc-bc2a-095fcf5dccc3",
+  "created": "2018-01-23T14:19:45.997Z",
+  "creatorId": "a8ff5cb5-32db-47dc-bc2a-095fcf5dccc3",
+  "tags": [],
+  "keywords": [],
+  "status": "ready",
+  "elements": {
+    "css": {
+      "elementType": "text",
+      "value": "html { \n  font-family: 'Titillium Web', sans-serif; \n  font-size: 14px;\n}\n\ntd {\n  padding: 3px 10px 3px 0;\n}\n\n.positive {\n  color: green;  \n}\n\n.positive #change::before {\n  content: '+'\n}\n\n.negative {\n  color: red;\n}\n\n.negative .change::before {\n  content: '-'\n}\n\n.value {\n  color: gray;\n}\n\n#container {\n  padding: 5px;\n  width: fit-content;\n}\n#latestUpdate {\n  font-size: 0.8rem;\n  padding-bottom: 5px;\n}\n\n#price {\n  font-size: 1.5rem;\n}"
+    },
+    "height": {
+      "elementType": "text"
+    },
+    "showScrollBars": {
+      "elementType": "toggle",
+      "value": false
+    },
+    "allowFullScreen": {
+      "elementType": "toggle",
+      "value": false
+    },
+    "js": {
+      "elementType": "text",
+      "value": "const SYMBOL = 'IBM'; //company ticker for stock data to get\nconst REFRESH_RATE = 10000; //refresh every 10 seconds\n\nvar xmlhttp = new XMLHttpRequest();\nvar url = \"https://api.iextrading.com/1.0/stock/\" + SYMBOL + \"/quote\";\nvar timeoutFunction;\n\nxmlhttp.onreadystatechange = function() {\n    if (this.readyState == 4) {\n\t\tif( this.status == 200) {\n\t\t\tvar res = JSON.parse(this.responseText);\n\t\t\tloadData(res);\n\t\t} else {\n\t\t\tclearTimeout(timeoutFunction);\n\t\t\tdocument.getElementById('container').innerHTML = this.status + ': ' + this.responseText;\n      \n\t\t}\n    } \n};\n\nxmlhttp.open(\"GET\", url, true);\nxmlhttp.send();\n\nfunction loadData(res) {\n\tdocument.getElementById(\"symbol\").innerHTML = res.symbol;\n\tdocument.getElementById(\"latestPrice\").innerHTML = res.latestPrice;\n\tdocument.getElementById(\"latestUpdate\").innerHTML = new Date(res.latestUpdate).toLocaleString();\n\tdocument.getElementById(\"change\").innerHTML = res.change;\n\tdocument.getElementById(\"changePercent\").innerHTML = '(' + (res.changePercent * 100).toFixed(2) + '%)';\n\tconst price = document.getElementById(\"price\");\t           \n\tprice.classList.remove(\"positive\");\n\tprice.classList.remove(\"negative\");\n\tif (res.change > 0) {\n\t\tprice.classList.add(\"positive\");\n\t} else if (res.change < 0) {\n\t\tprice.classList.add(\"negative\");\n\t}\n\tdocument.getElementById(\"open\").innerHTML = res.open;\n\tconst high = document.getElementById(\"high\");\n\tif (res.high) {\n\t\thigh.innerHTML = res.high;\n\t} else {\n\t\thigh.innerHTML = '-';\n\t}\n\tconst low = document.getElementById(\"low\");\n\tif (res.low) {\n\t\tlow.innerHTML = res.low;\n\t} else {\n\t\tlow.innerHTML = '-';\n\t}\n  \n\tdocument.getElementById(\"marketCap\").innerHTML = res.marketCap;\n\tdocument.getElementById(\"week52High\").innerHTML = res.week52High;\n\tdocument.getElementById(\"week52Low\").innerHTML = res.week52Low;\n\trefreshStockData();\n}\n\nfunction refreshStockData(){\n\ttimeoutFunction = setTimeout(function() {\n\t\txmlhttp.open(\"GET\", url, true);\n\t\txmlhttp.send();\n\t}, REFRESH_RATE);\n}"
+    },
+    "html": {
+      "elementType": "text",
+      "value": "<div id=\"container\">\n\t<div id=\"symbol\">Ticker</div>\n\t<div id=\"price\">\n\t\t<span id=\"latestPrice\">Price</span>\n\t\t<span id=\"change\"></span>\n\t\t<span id=\"changePercent\"></span>\n\t</div>\n\t<div id=\"latestUpdate\" class=\"value\">date</div>\n\t<table>\n\t\t<tr>\n\t\t\t<td>Open</td>\n\t\t\t<td id=\"open\" class=\"value\">Loading...</td>\n\t\t\t<td>Market cap</td>\n\t\t\t<td id=\"marketCap\" class=\"value\">Loading...</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>High</td>\n\t\t\t<td id=\"high\" class=\"value\">Loading...</td>\n\t\t\t<td>52-wk high</td>\n\t\t\t<td id=\"week52High\" class=\"value\">Loading...</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Low</td>\n\t\t\t<td id=\"low\" class=\"value\">Loading...</td>\n\t\t\t<td>52-wk low</td>\n\t\t\t<td id=\"week52Low\" class=\"value\">Loading...</td>\n\t\t</tr>\n\t</table>\n</div>"
+    },
+    "width": {
+      "elementType": "text"
+    }
+  },
+  "selectedLayouts": [
+    {
+      "layout": {
+        "id": "html-snippet-layout"
+      }
+    }
+  ],
+  "kind": []
+}

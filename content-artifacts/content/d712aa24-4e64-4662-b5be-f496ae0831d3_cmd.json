@@ -1,0 +1,44 @@
+{
+  "id": "d712aa24-4e64-4662-b5be-f496ae0831d3",
+  "rev": "6-088e490628c1d8519f2f05e55606c495",
+  "name": "HTML snippet sample page",
+  "description": "",
+  "classification": "content",
+  "typeId": "2af1d22a-fecf-41e1-a808-7301cb37b79f",
+  "lastModified": "2018-01-23T20:52:43.275Z",
+  "lastModifierId": "a8ff5cb5-32db-47dc-bc2a-095fcf5dccc3",
+  "created": "2018-01-19T19:03:39.055Z",
+  "creatorId": "a8ff5cb5-32db-47dc-bc2a-095fcf5dccc3",
+  "tags": [],
+  "status": "ready",
+  "elements": {
+    "banner": {
+      "elementType": "reference",
+      "values": [
+        {
+          "id": "8647041c-df47-47dc-9297-10d246ba7b90"
+        }
+      ]
+    },
+    "sectionOne": {
+      "elementType": "reference",
+      "values": []
+    },
+    "sectionTwo": {
+      "elementType": "reference"
+    }
+  },
+  "selectedLayouts": [
+    {
+      "layout": {
+        "id": "standard-page-layout"
+      }
+    }
+  ],
+  "kind": [
+    "page"
+  ],
+  "thumbnail": {
+    "id": "257b578f-7f29-49e5-9e50-97c3846ccf98"
+  }
+}

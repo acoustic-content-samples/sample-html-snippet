@@ -1,0 +1,15 @@
+{
+  "name": "HTML snippet sample page",
+  "hideFromNavigation": false,
+  "segment": "html-snippet-test-page",
+  "layoutId": "standard-page-layout",
+  "description": "A demonstration of the capabilities of the WCH sample html snippet.",
+  "contentTypeId": "2af1d22a-fecf-41e1-a808-7301cb37b79f",
+  "title": "HTML snippet sample page",
+  "contentId": "d712aa24-4e64-4662-b5be-f496ae0831d3",
+  "classification": "page",
+  "contentStatus": "ready",
+  "hierarchicalPath": "/HTML snippet sample page",
+  "id": "09b8c782-db0b-4b30-9288-de73a698a115",
+  "rev": "11-df9f1a994db5b916be2a1a2f857ae995"
+}

@@ -1,0 +1,24 @@
+{
+  "classification": "layout-mapping",
+  "id": "html-snippet-layout-mapping",
+  "mappings": [
+    {
+      "defaultLayout": {
+        "id": "html-snippet-layout",
+        "name": "htmlSnippetLayout"
+      },
+      "layouts": [
+        {
+          "id": "html-snippet-layout",
+          "name": "htmlSnippetLayout"
+        }
+      ]
+    }
+  ],
+  "name": "htmlSnippetLayoutMapping",
+  "rev": "q7Sbo3SweGG/ZjZ7GFYUqoi8WT+TNrdHLf7B6t7aCsI=",
+  "type": {
+    "id": "fdee49eb-1367-4005-8bfe-7e634a4d7e0f",
+    "name": "HTML snippet"
+  }
+}
