@@ -42,7 +42,7 @@ Weather forecast
    * Options, Themes, and Customize tabs allow for further modification
 3. Click 'GET CODE' button
 4. Copy code from modal popup.
-5. Create a new content item in your tenant.
+5. Create a new content item of type 'HTML snippet' in your tenant.
 6. Paste copied code in the HTML text field.
 7. Publish the content item.
 8. Add the new content item to a page.
