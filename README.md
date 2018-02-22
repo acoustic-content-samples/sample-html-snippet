@@ -20,15 +20,16 @@ Sample content type that can take html, css, and js input to render a component.
 * Run `wchtools init` in your command line. Enter your username and API URL to configure the wchtools
 
 ### Clone and install the sample content-artifacts and site-application-files
-* If you have not already done so, clone the [wch-site-application](https://github.com/ibm-wch/wch-site-application)) source code and run `npm install` from within the clonded directory. 
-* Change the command line directory to the wch-site-application root directory.
-* Using the Git URL to the sample-html-snippet repository, run this command to copy the needed sample site-application-files and update the layout settings for the new component.
+* If you have not already done so, clone the [wch-site-application](https://github.com/ibm-wch/wch-site-application) source code and run `npm install` from within the cloned directory to install the dependencies. 
+* From a command terminal, change directories to the wch-site-application root folder.
+* Run the command below to copy the needed sample site-application-files and update the layout settings for the new component:
 ```
 npm run install-layouts-from-git https://github.com/ibm-wch/sample-html-snippet.git
 ```
+* Build and deploy your wch-site-application repository to make the new changes live.
 
 ### Build and Deploy your components
-From the command line within the wch-site-application root directory, run:
+From a command terminal within the wch-site-application root directory, run:
 1. `npm run build` to compile the project. Make sure there is no error during the build process.
 2. `npm run deploy` to deploy the code to your WCH tenant. After that, you can see your changes in your WCH live site.
 
