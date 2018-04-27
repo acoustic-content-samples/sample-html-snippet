@@ -1,14 +1,9 @@
 {
   "id": "8647041c-df47-47dc-9297-10d246ba7b90",
-  "rev": "27-9ba54b5f926b643a074b3b99a4b78197",
-  "name": "Stock ticker HTML snippet",
+  "rev": "3-a78251c670fd0a5c1e2f21295ce9b22a",
+  "name": "Stock ticker Embed code",
   "description": "",
-  "classification": "content",
   "typeId": "fdee49eb-1367-4005-8bfe-7e634a4d7e0f",
-  "lastModified": "2018-01-23T20:52:29.650Z",
-  "lastModifierId": "a8ff5cb5-32db-47dc-bc2a-095fcf5dccc3",
-  "created": "2018-01-23T14:19:45.997Z",
-  "creatorId": "a8ff5cb5-32db-47dc-bc2a-095fcf5dccc3",
   "tags": [],
   "keywords": [],
   "status": "ready",
@@ -43,9 +38,20 @@
   "selectedLayouts": [
     {
       "layout": {
-        "id": "html-snippet-layout"
+        "id": "embed-code-layout"
       }
     }
   ],
-  "kind": []
+  "kind": [],
+  "lastModified": "2018-03-29T18:55:56.095Z",
+  "created": "2018-03-29T18:47:56.026Z",
+  "creatorId": "2ffd08b5-3546-4285-83ed-872bf3510c62",
+  "classification": "content",
+  "lastModifierId": "2ffd08b5-3546-4285-83ed-872bf3510c62",
+  "type": "Embed code",
+  "creator": "Adam.iem",
+  "lastModifier": "Adam.iem",
+  "publishing": {
+    "status": "not-available"
+  }
 }

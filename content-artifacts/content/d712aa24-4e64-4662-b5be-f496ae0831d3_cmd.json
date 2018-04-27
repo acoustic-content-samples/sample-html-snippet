@@ -1,14 +1,9 @@
 {
   "id": "d712aa24-4e64-4662-b5be-f496ae0831d3",
-  "rev": "6-088e490628c1d8519f2f05e55606c495",
-  "name": "HTML snippet sample page",
+  "rev": "4-0a23eefb36055679e0c1e9bfd1da91a8",
+  "name": "Embed code sample page",
   "description": "",
-  "classification": "content",
   "typeId": "2af1d22a-fecf-41e1-a808-7301cb37b79f",
-  "lastModified": "2018-01-23T20:52:43.275Z",
-  "lastModifierId": "a8ff5cb5-32db-47dc-bc2a-095fcf5dccc3",
-  "created": "2018-01-19T19:03:39.055Z",
-  "creatorId": "a8ff5cb5-32db-47dc-bc2a-095fcf5dccc3",
   "tags": [],
   "status": "ready",
   "elements": {
@@ -16,7 +11,11 @@
       "elementType": "reference",
       "values": [
         {
-          "id": "8647041c-df47-47dc-9297-10d246ba7b90"
+          "id": "8647041c-df47-47dc-9297-10d246ba7b90",
+          "name": "Stock ticker Embed code",
+          "typeId": "fdee49eb-1367-4005-8bfe-7e634a4d7e0f",
+          "creatorId": "2ffd08b5-3546-4285-83ed-872bf3510c62",
+          "status": "ready"
         }
       ]
     },
@@ -39,6 +38,18 @@
     "page"
   ],
   "thumbnail": {
-    "id": "257b578f-7f29-49e5-9e50-97c3846ccf98"
+    "id": "257b578f-7f29-49e5-9e50-97c3846ccf98",
+    "url": "/authoring/v1/resources/d22cb3c0070450e37c5d7515b6d3906a"
+  },
+  "lastModified": "2018-03-29T18:55:56.053Z",
+  "created": "2018-03-29T18:47:57.311Z",
+  "creatorId": "2ffd08b5-3546-4285-83ed-872bf3510c62",
+  "classification": "content",
+  "lastModifierId": "2ffd08b5-3546-4285-83ed-872bf3510c62",
+  "type": "Standard page",
+  "creator": "Adam.iem",
+  "lastModifier": "Adam.iem",
+  "publishing": {
+    "status": "not-available"
   }
 }

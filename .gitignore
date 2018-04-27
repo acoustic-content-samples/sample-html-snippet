@@ -1,1 +1,4 @@
-*.idea
+.idea/
+.wchtoolshashes
+wchtools-api.log
+wchtools-cli.log

@@ -1,17 +1,27 @@
 # sample-html-snippet
 
 Sample content type that can take html, css, and js input to render a component.
+Update: As of April 26th, 2018, the HTML Snippet was renamed to Embed code and the content type is now part of the out of the box
+Single Page Application Oslo.
+Therefore this repository was updated to only showcase a sample implementation of a stock ticker using the content type that exists
+out of the box.
 
 ![HTML snippet rendered from HTML, CSS, and JS code](/doc/images/demo-sample.png)
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
+- [Prerequisite](#prerequisite)
 - [Install and deploy the sample](#install-and-deploy-the-sample)
   - [Configure your Wchtools](#configure-your-wchtools)
-  - [Install the package content-artifacts and  site-application-files](#clone-and-install-the-sample-content-artifacts-and-site-application-files)
+  - [Install the sample content-artifacts](#install-the-sample-content-artifacts)
   - [Build and Deploy your components](#build-and-deploy-your-components)
 - [Example create your own html snippet](#example-create-your-own-html-snippet)
 - [License](#license)
+
+## Prerequisite
+* Node.js v6.11.1 or above. https://nodejs.org/en/download/
+* Latest version of wchtools-cli. https://github.com/ibm-wch/wchtools-cli 
+* Installed out of the box site in your Watson Content Hub tenant.
 
 ## Install and deploy the sample
 
@@ -19,19 +29,11 @@ Sample content type that can take html, css, and js input to render a component.
 * Get your WCH tenant API URL. Go to your WCH homepage -> YOUR USERNAME tab on top bar -> Hub information -> API URL. Copy the URL.
 * Run `wchtools init` in your command line. Enter your username and API URL to configure the wchtools
 
-### Clone and install the sample content-artifacts and site-application-files
-* If you have not already done so, clone the [wch-site-application](https://github.com/ibm-wch/wch-site-application) source code and run `npm install` from within the cloned directory to install the dependencies. 
-* From a command terminal, change directories to the wch-site-application root folder.
-* Run the command below to copy the needed sample site-application-files and update the layout settings for the new component:
+### Install the sample content-artifacts
+* Using the Git URL to the sample-html-snippet repository and change the command line directory to `content-artifacts`, run this command to push HTML snippet sample page contents.
 ```
-npm run install-layouts-from-git https://github.com/ibm-wch/sample-html-snippet.git
+wchtools push -A -v -f
 ```
-* Build and deploy your wch-site-application repository to make the new changes live.
-
-### Build and Deploy your components
-From a command terminal within the wch-site-application root directory, run:
-1. `npm run build` to compile the project. Make sure there is no error during the build process.
-2. `npm run deploy` to deploy the code to your WCH tenant. After that, you can see your changes in your WCH live site.
 
 ## Example create your own HTML snippet
 Weather forecast
@@ -42,7 +44,7 @@ Weather forecast
    * Options, Themes, and Customize tabs allow for further modification
 3. Click 'GET CODE' button
 4. Copy code from modal popup.
-5. Create a new content item of type 'HTML snippet' in your tenant.
+5. Create a new content item in your tenant.
 6. Paste copied code in the HTML text field.
 7. Publish the content item.
 8. Add the new content item to a page.

@@ -1,0 +1,14 @@
+{
+  "name": "Embed code sample page",
+  "hideFromNavigation": false,
+  "segment": "embed-code-test-page",
+  "layoutId": "standard-page-layout",
+  "description": "A demonstration of the capabilities of the WCH sample embed code component.",
+  "contentTypeId": "2af1d22a-fecf-41e1-a808-7301cb37b79f",
+  "title": "Embed code sample page",
+  "contentId": "d712aa24-4e64-4662-b5be-f496ae0831d3",
+  "classification": "page",
+  "contentStatus": "ready",
+  "id": "09b8c782-db0b-4b30-9288-de73a698a115",
+  "rev": "3-4095ed6ef11749a16a10731aa78ca80b"
+}
