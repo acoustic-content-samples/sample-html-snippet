@@ -26,7 +26,7 @@ out of the box.
 ## Install and deploy the sample
 
 ### Configure your Wchtools
-* Get your WCH tenant API URL. Go to your WCH homepage -> YOUR USERNAME tab on top bar -> Hub information -> API URL. Copy the URL.
+* Get your WCH tenant API URL. Open the Hub information dialog from the "About" flyout menu in the left navigation pane of the Watson Content Hub user interface. Copy the API URL.
 * Run `wchtools init` in your command line. Enter your username and API URL to configure the wchtools
 
 ### Install the sample content-artifacts
