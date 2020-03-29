@@ -1,6 +1,6 @@
 # sample-html-snippet
 
-Sample content type that can take html, css, and js input to render a component.
+Sample content type that can take html, css, and js input to render a component in Acoustic Content (formerly Watson Content Hub or WCH).
 Update: As of April 26th, 2018, the HTML Snippet was renamed to Embed code and the content type is now part of the out of the box
 Single Page Application Oslo.
 Therefore this repository was updated to only showcase a sample implementation of a stock ticker using the content type that exists
